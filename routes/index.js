@@ -3,8 +3,6 @@ const {
   getLatestBlock,
   getLastNBlocks,
   getAccountDetails,
-  getERC20TokenDetails,
-  fetchAndStoreBlocks,
   getTokenDetails,
 } = require('../controllers/blockController');
 
