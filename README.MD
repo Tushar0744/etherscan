@@ -27,3 +27,28 @@ Before you start, ensure that you have the following installed:
 - [MongoDB](https://www.mongodb.com/) (You can use MongoDB Atlas for a cloud instance)
 - An Infura account or a public Ethereum node URL
 
+
+
+## API
+1. Getting Latest Block
+
+`curl --location 'http://localhost:5000/api/latest-block' \
+--header 'Cookie: sails.sid=s%3AkpAsTChi04ISj3428xg_7n0CsI4kOEvE.JGOnbLROXp%2BPkFIoQsJNR%2F%2BfreumqwIX3aD9UUfnhw0' \
+--data ''`
+
+2. Getting Latest n Blocks
+
+`curl --location 'http://localhost:5000/api/last-n-blocks/:n?n=10' \
+--header 'Cookie: sails.sid=s%3AkpAsTChi04ISj3428xg_7n0CsI4kOEvE.JGOnbLROXp%2BPkFIoQsJNR%2F%2BfreumqwIX3aD9UUfnhw0'`
+
+3. Getting Account Details
+
+`curl --location 'http://localhost:5000/api/account/0x742d35Cc6634C0532925a3b844Bc454e4438f44e/10' \
+--header 'Cookie: sails.sid=s%3AkpAsTChi04ISj3428xg_7n0CsI4kOEvE.JGOnbLROXp%2BPkFIoQsJNR%2F%2BfreumqwIX3aD9UUfnhw0'`
+
+4. Getting ERC20 Token Details
+
+`curl --location 'http://localhost:5000/api/token/0xdac17f958d2ee523a2206206994597c13d831ec7/0x742d35cc6634c0532925a3b844bc454e4438f44e' \
+--header 'Cookie: sails.sid=s%3AkpAsTChi04ISj3428xg_7n0CsI4kOEvE.JGOnbLROXp%2BPkFIoQsJNR%2F%2BfreumqwIX3aD9UUfnhw0'`
+
+
